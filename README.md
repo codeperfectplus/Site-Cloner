@@ -11,18 +11,33 @@ cd site-cloner
 pip install -r requirements.txt
 ```
 
+## Usage
+
+```python
+from site_cloner import SiteCloner
+
+sc = SiteCloner("https://codeperfectplus.herokuapp.com/")
+sc.clone_website()
+```
+
 ## Upcoming Features
 
 - [x] Add Support for download multiple pages(v1.0.0)
-- [x] Add Support for downloading images(v1.0.0)
+- [x] Add Support for downloading images(v1.0.0)\
+- [x] Pip Package Support
 - [ ] Add support for cloning websites with login
-- [ ] Pip Package Support
+
 
 ## Changelog
 
-**v1.0.0**
+**0.0.1**
 
-- Initial Release
+- [x] Initial Release
+- [x] Implemented basic functionality
+- [x] Implemented downloading of images
+- [x] Implemented downloading of multiple pages
+- [x] Pip Package Support
+
 
 ## Contributors
 
