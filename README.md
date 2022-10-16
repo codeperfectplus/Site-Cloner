@@ -1,4 +1,4 @@
-<h1 align="center"> Site Cloner</h1>
+<h1 align="center"><a href="https://pypi.org/project/site-cloner/">Site Cloner</a></h1>
 <p align="center">A simple tool to clone a website</p>
 <p align="center">This tool is for educational purposes only.Please follow the copyright 
     laws of your country. Our team is not responsible for any misuse.</p>
@@ -6,9 +6,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/Py-Contributors/site-cloner
-cd site-cloner
-pip install -r requirements.txt
+pip install site-cloner
 ```
 
 ## Usage
