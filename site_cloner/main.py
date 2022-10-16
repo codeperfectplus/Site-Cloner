@@ -6,19 +6,15 @@
 
 import os
 import re
-import sys
 import logging
 import requests
 from tqdm import tqdm
 from bs4 import BeautifulSoup
-from pprint import pprint
-from urllib.parse import urljoin
-
 logging.basicConfig(filename='image_scraper.log', 
                     level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-class CloneWebsite:
+class SiteCloner(object):
     def __init__(self, website_name):
         self.website_name = website_name
         self.site_without_protocol = self.website_name.split('//')[1]
@@ -93,14 +89,14 @@ class CloneWebsite:
                     fp.write(response.content)
             else:
                 print(f"Error downloading {image_link}")
-            
-if __name__ == "__main__":
-    website_name = sys.argv[1]
-    clone = CloneWebsite(website_name) # create object of CloneWebsite class
-    data = clone.crawl_website(website_name) # crawl the entry website and get the content
-    #page_links, _ = clone.scrap_page_links(data) # get the links of all the pages
-    #clone.scrap_webpage(page_links) # scrap the webpage and save it to respective folder
     
-    image_links = clone.get_image_links(data) # get the links of the images
-    clone.scrap_images(image_links) # download the images in the website folder
+    def clone_website(self):
+        """ This function will clone the website """
+        index_page = self.crawl_website(self.website_name)
+        page_links, other_links = self.scrap_page_links(index_page)
+        image_links = self.get_image_links(index_page)
+        self.scrap_webpage(page_links)
+        self.scrap_images(image_links)
+        print("Website cloned successfully")
+
     

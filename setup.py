@@ -26,7 +26,4 @@ setuptools.setup(
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries",
     ],
-    # entry_points={
-    #     "console_scripts": ["random_profile = random_profile.__main__:main"],
-    # },
 )
