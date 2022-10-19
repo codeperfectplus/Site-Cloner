@@ -2,6 +2,16 @@
 <p align="center">A simple tool to clone a website</p>
 <p align="center">This tool is for educational purposes only.Please follow the copyright 
     laws of your country. Our team is not responsible for any misuse.</p>
+<p align="center">
+<img src="https://img.shields.io/pypi/v/site-cloner.svg">
+<img src="https://img.shields.io/pypi/pyversions/site-cloner.svg">
+<img src="https://img.shields.io/pypi/l/site-cloner.svg">
+</p>
+<p align="center">
+<img src="https://img.shields.io/pypi/dd/site-cloner.svg">
+<img src="https://img.shields.io/pypi/dw/site-cloner.svg">
+<img src="https://img.shields.io/pypi/dm/site-cloner.svg">
+</p>
 
 ## Installation
 
